@@ -10,6 +10,9 @@ import {
 import { LogoCloud } from '../components/LogoCloud/LogoCloud'
 import { Hero } from '../components/Hero/Hero'
 import { InfoSection } from '../components/Sections/InfoSection'
+import { ContainerScroll } from '../components/ui/container-scroll-animation'
+import dashboard from "../../public/images/dappFuse-dashboard.png"
+import Image from 'next/image'
 
 const secondaryFeatures = [
   {
@@ -150,37 +153,38 @@ const Home = () => {
         {/* SUPPORTED NETWORKS */}
         <LogoCloud />
         {/* Feature section */}
-        <div className="mt-44">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No server? No problem.</p>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis.
-              </p>
-            </div>
-          </div>
-          <div className="relative overflow-hidden pt-16">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <img
-                src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
-                alt="App screenshot"
-                className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10"
-                width={2432}
-                height={1442}
-              />
-              <div className="relative" aria-hidden="true">
-                <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
+        <div>
+          <ContainerScroll
+            titleComponent={
+              <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-[24]">
+                <div className="mx-auto max-w-2xl sm:text-center">
+                  <h2 className="text-base font-semibold leading-7 text-[#D95798]">Everything you need</h2>
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Integrate with ease.</p>
+                </div>
+              </div>
+            }
+          >
+            <div className="overflow-hidden">
+              <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-2">
+                <Image
+                  src={dashboard}
+                  alt="App screenshot"
+                  className="rounded-xl"
+                  width={2432}
+                  height={1442}
+                />
+                <div className="relative" aria-hidden="true">
+                  <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-gray-900 pt-[7%]" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 md:mt-24 lg:px-8">
+          </ContainerScroll>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
               {secondaryFeatures.map((feature) => (
                 <div key={feature.name} className="relative pl-9">
                   <dt className="inline font-semibold text-white">
-                    <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-500" aria-hidden="true" />
+                    <feature.icon className="absolute left-1 top-1 h-5 w-5 text-[#D95798]" aria-hidden="true" />
                     {feature.name}
                   </dt>{' '}
                   <dd className="inline">{feature.description}</dd>
@@ -193,7 +197,7 @@ const Home = () => {
         {/* Stats */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-            <h2 className="text-base font-semibold leading-8 text-indigo-400">Our track record</h2>
+            <h2 className="text-base font-semibold leading-8 text-[#D95798]">Our track record</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Trusted by thousands of developers&nbsp;worldwide
             </p>

@@ -8,7 +8,7 @@ import opt from "../../../public/images/chains/opt.svg"
 
 export const LogoCloud: React.FC = () => {
   return (
-    <div className="mx-auto mt-44 max-w-7xl px-6 lg:px-8">
+    <div className="mx-auto mt-28 max-w-7xl px-6 lg:px-8">
       <h2 className="text-center text-lg font-semibold leading-8 text-white mb-8 tracking-wider">
         {"SUPPORTED NETWORKS"}
       </h2>

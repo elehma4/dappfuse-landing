@@ -149,12 +149,8 @@ const Home = () => {
         <InfoSection />
         {/* SUPPORTED NETWORKS */}
         <LogoCloud />
-
         {/* Feature section */}
-
-
-        {/* Feature section */}
-        <div className="mt-32 sm:mt-56">
+        <div className="mt-44">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-base font-semibold leading-7 text-indigo-400">Everything you need</h2>

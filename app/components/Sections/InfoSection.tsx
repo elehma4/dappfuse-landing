@@ -40,7 +40,7 @@ export const InfoSection: React.FC = () => {
       <div className="mx-auto max-w-2xl lg:max-w-none">
         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
           {primaryFeatures.map((feature) => (
-            <CardContainer>
+            <CardContainer key={feature.name}>
               <div key={feature.name} className="flex flex-col p-8 rounded-3xl bg-gradient-to-b to-[rgba(217,87,152,0.67)] from-[rgba(136,68,102,0.20)] shadow-lg cursor-pointer">
                 <dt className="text-base font-semibold leading-7 text-white mx-auto text-center mb-2">
                   <CardItem>

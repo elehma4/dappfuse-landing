@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from "../../../public/images/logo-dappfuse-full-light-85.png"
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Dialog } from '@headlessui/react'
+import { useLocation } from "wouter";
+import { useState } from 'react'
 import Image from 'next/image'
 
 const navigation = [
@@ -13,7 +14,8 @@ const navigation = [
 ]
 
 export const Hero: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 h-screen">
@@ -159,6 +161,7 @@ export const Hero: React.FC = () => {
               <a
                 href="#"
                 className="rounded-3xl hover:rounded-md bg-[#D95798] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-12 py-3 text-md font-semibold text-white shadow-sm transition-all duration-500"
+                onClick={() => setLocation("https://platform.dappfuse.com/#/a/sign-in")}
               >
                 Get started
               </a>

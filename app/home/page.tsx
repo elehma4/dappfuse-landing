@@ -4,6 +4,8 @@ import { LogoCloud } from '../components/LogoCloud/LogoCloud'
 import { Hero } from '../components/Hero/Hero'
 import { InfoCardSection } from '../components/Sections/InfoCardSection'
 import { ScrollFeature } from '../components/ScrollFeature/ScrollFeature'
+import GetNotified from '../components/Sections/GetNotified';
+import OurTeam from '../components/OurTeam/OurTeam';
 
 const stats = [
   { id: 1, name: 'Developers on the platform', value: '8,000+' },
@@ -87,30 +89,12 @@ const Home = () => {
         <LogoCloud />
         {/* Feature section */}
         <ScrollFeature />
-        {/* Stats */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-            <h2 className="text-base font-semibold leading-8 text-[#D95798]">Our track record</h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Trusted by thousands of developers&nbsp;worldwide
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste
-              dolor cupiditate blanditiis ratione.
-            </p>
-          </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.id} className="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-                <dt className="text-sm leading-6">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight">{stat.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-
+        {/* Our Mission */}
+        <GetNotified />
+        {/* Our Team */}
+        <OurTeam />
         {/* CTA section */}
-        <div className="relative isolate mt-32 px-6 py-32 sm:mt-56 sm:py-40 lg:px-8">
+        <div className="relative isolate mt-32 px-6 py-32 sm:mt-48 sm:py-40 lg:px-8">
           <svg
             className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
             aria-hidden="true"

@@ -157,7 +157,7 @@ export const Hero: React.FC = () => {
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-x-8">
               <a
-                href="#"
+                href="https://platform.dappfuse.com/"
                 className="rounded-3xl hover:rounded-md bg-[#D95798] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-12 py-3 text-md font-semibold text-white shadow-sm transition-all duration-500"
               >
                 Get started

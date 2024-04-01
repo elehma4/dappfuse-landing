@@ -1,3 +1,5 @@
+"use client";
+
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card"
 import connect from "../../../public/images/connect.png"
 import chainEvent from "../../../public/images/chain-event.png"

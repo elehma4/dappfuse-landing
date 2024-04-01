@@ -1,3 +1,5 @@
+"use client";
+
 import {
     ArrowPathIcon,
     ChevronRightIcon,
@@ -74,7 +76,7 @@ export const ScrollFeature: React.FC = () => {
             </div>
         </div>
         </ContainerScroll>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-[-88px]">
           <dl className="mx-auto grid max-w-2xl grid-cols-1 gap-x-6 gap-y-10 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
             {secondaryFeatures.map((feature) => (
             <div key={feature.name} className="relative pl-9">

@@ -10,7 +10,7 @@ export default function GetNotified() {
             </h2>
             <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
               Our platform is currently in closed beta.<br /> 
-              If you're interested in testing, please connect with us.
+              {"If you're interested in testing, please connect with us."}
             </p>
             <form className="mx-auto mt-10 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">

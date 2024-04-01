@@ -6,7 +6,7 @@ import chainEvent from "../../../public/images/chain-event.png"
 import identity from "../../../public/images/identity-print.png"
 import Image from 'next/image'
 
-export const InfoSection: React.FC = () => {
+export const InfoCardSection: React.FC = () => {
   const primaryFeatures = [
     {
       name: 'Set On-Chain Triggers',

@@ -2,7 +2,7 @@
 
 import { LogoCloud } from '../components/LogoCloud/LogoCloud'
 import { Hero } from '../components/Hero/Hero'
-import { InfoSection } from '../components/Sections/InfoSection'
+import { InfoCardSection } from '../components/Sections/InfoCardSection'
 import { ScrollFeature } from '../components/ScrollFeature/ScrollFeature'
 
 const stats = [
@@ -81,8 +81,8 @@ const Home = () => {
       <main>
         {/* Hero section */}
         <Hero />
-        {/* Info Section */}
-        <InfoSection />
+        {/* Info Card Section */}
+        <InfoCardSection />
         {/* SUPPORTED NETWORKS */}
         <LogoCloud />
         {/* Feature section */}

@@ -41,7 +41,7 @@ const people = [
   },
   {
     name: 'Ethan Lehman',
-    role: 'Full Stack Developer',
+    role: 'Developer',
     image: ethan,
     linkedinUrl: 'https://www.linkedin.com/in/ethan-lehman-development/'
   }

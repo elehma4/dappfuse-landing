@@ -1,7 +1,7 @@
 "use client";
 
 import logo from "../../../public/images/logo-dappfuse-full-light-85.png"
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, ChevronDoubleDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -155,13 +155,18 @@ export const Hero: React.FC = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Connect the dots of your digital customer journey<br />by capturing on-chain data with your existing marketing tools
             </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-x-8">
-              <a
-                href="https://platform.dappfuse.com/"
-                className="rounded-3xl hover:rounded-md bg-[#D95798] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-12 py-3 text-md font-semibold text-white shadow-sm transition-all duration-500"
-              >
-                Get started
-              </a>
+            <div className="my-10 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
+              <div className="flex flex-col justify-center content-center absolute bottom-0">
+                <a
+                  href="/info"
+                  className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.22rem] text-[#D95798] font-normal"
+                >
+                  Explore
+                </a>
+                <div className="w-full flex justify-center mt-4">
+                  <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm motion-safe:animate-bounce" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

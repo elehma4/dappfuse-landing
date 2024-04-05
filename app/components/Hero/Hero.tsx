@@ -58,14 +58,14 @@ export const Hero: React.FC = () => {
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-12" aria-label="Global">
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
                 className="h-8 w-auto"
                 src={logo}
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -79,22 +79,26 @@ export const Hero: React.FC = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+              <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end group hover:shadow-sm transition-all duration-500">
-            <a href="#" className="text-sm font-semibold leading-6 text-white flex items-center gap-2">
-              Log in <span aria-hidden="true" className='transition-all duration-500 group-hover:translate-x-1'>&rarr;</span>
-            </a>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:shadow-sm">
+            <Link href="https://platform.dappfuse.com/" className="rounded-md text-sm font-semibold border-2 border-[#D95798] text-white bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-5 py-[0.55rem] shadow-sm mr-[0.67rem]">
+              Get started
+            </Link>
+            <Link href="#" className="rounded-md text-sm font-semibold leading-6 bg-[#D95798] text-white flex items-center gap-2 px-7 py-[0.55rem]">
+              Log in {/* <span aria-hidden="true" className='transition-all duration-500 group-hover:translate-x-1'>&rarr;</span> */}
+            </Link>
+
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        {/* <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="#/Company" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 <Image
                   className="h-8 w-auto"
@@ -135,7 +139,7 @@ export const Hero: React.FC = () => {
               </div>
             </div>
           </Dialog.Panel>
-        </Dialog>
+        </Dialog> */}
       </header>
 
       <div className="relative isolate overflow-hidden pt-14">
@@ -156,19 +160,25 @@ export const Hero: React.FC = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Connect the dots of your digital customer journey<br />by capturing on-chain data with your existing marketing tools
             </p>
+            {/* <div className="mt-10 flex flex-col items-center justify-center gap-x-8">
+              <a
+                href="https://platform.dappfuse.com/"
+                className="rounded-3xl hover:rounded-md bg-[#D95798] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-12 py-3 text-md font-semibold text-white shadow-sm transition-all duration-500"
+              >
+                Get started
+              </a>
+            </div> */}
             <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">
-                <a href="/#info" >
-                  <a
-                    href="/#info"
-                    className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
-                  >
-                    Explore
-                  </a>
-                  <a href="/#info" className="w-full flex justify-center mt-4">
-                    <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm motion-safe:animate-bounce" />
-                  </a>
-                </a>
+                <Link
+                  href="/#info"
+                  className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
+                >
+                  Explore
+                </Link>
+                <Link href="/#info" className="w-full flex justify-center mt-4">
+                  <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm" />
+                </Link>
               </div>
             </div>
           </div>

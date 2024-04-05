@@ -5,6 +5,7 @@ import { Bars3Icon, ChevronDoubleDownIcon, XMarkIcon } from '@heroicons/react/24
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from "next/link";
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -155,17 +156,19 @@ export const Hero: React.FC = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Connect the dots of your digital customer journey<br />by capturing on-chain data with your existing marketing tools
             </p>
-            <div className="my-10 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
+            <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">
-                <a
-                  href="/info"
-                  className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.22rem] text-[#D95798] font-normal"
-                >
-                  Explore
+                <a href="/#info" >
+                  <a
+                    href="/#info"
+                    className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
+                  >
+                    Explore
+                  </a>
+                  <a href="/#info" className="w-full flex justify-center mt-4">
+                    <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm motion-safe:animate-bounce" />
+                  </a>
                 </a>
-                <div className="w-full flex justify-center mt-4">
-                  <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm motion-safe:animate-bounce" />
-                </div>
               </div>
             </div>
           </div>

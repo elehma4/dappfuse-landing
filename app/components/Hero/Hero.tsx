@@ -170,14 +170,16 @@ export const Hero: React.FC = () => {
             </div> */}
             <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">
-                <Link
-                  href="/#info"
-                  className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
-                >
-                  Explore
-                </Link>
-                <Link href="/#info" className="w-full flex justify-center mt-4">
-                  <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm" />
+                <Link href="/#info">
+                  <div
+                    
+                    className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
+                  >
+                    Explore
+                  </div>
+                  <div className="w-full flex justify-center mt-4">
+                    <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm" />
+                  </div>
                 </Link>
               </div>
             </div>

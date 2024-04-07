@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
         <rect width="100%" height="100%" strokeWidth={0} fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
       </svg>
       <div
-        className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
+        className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-29rem)] xl:left-[calc(50%-24rem)]"
         aria-hidden="true"
       >
         <div
@@ -170,15 +170,14 @@ export const Hero: React.FC = () => {
             </div> */}
             <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">
-                <Link href="/#info">
+                <Link href="/#info" className="w-full flex flex-col justify-center content-center">
                   <div
-                    
-                    className="rounded-3xl hover:rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 shadow-sm transition-all duration-500 text-[2.1rem] text-[#D95798] font-light"
+                    className="rounded-3xl hover:rounded-md transition-all duration-500 text-[2.1rem] text-[#D95798] shadow-sm m-auto font-extralight leading-7 mb-3"
                   >
                     Explore
                   </div>
-                  <div className="w-full flex justify-center mt-4">
-                    <ChevronDoubleDownIcon className="w-7 text-[#D95798] shadow-sm" />
+                  <div className="flex justify-center mt-4 w-20 m-auto">
+                    <ChevronDoubleDownIcon className="text-[#D95798] ease-in duration-300 shadow-sm hover:shadow-md shadow-[#D95798] hover:shadow-[#D95798] p-[1.555rem] rounded-full font-medium mb-2" />
                   </div>
                 </Link>
               </div>

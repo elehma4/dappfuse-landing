@@ -39,7 +39,7 @@ export const InfoCardSection: React.FC = () => {
           Automagically push on-chain customer events to tools like Google Analytics, Hubspot, Salesforce CRM and many more
         </p>
       </div>
-      <div className="mx-auto max-w-2xl lg:max-w-none">
+      <div className="mx-auto max-w-2xl lg:max-w-none flex justify-center">
         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
           {primaryFeatures.map((feature) => (
             <CardContainer key={feature.name}>

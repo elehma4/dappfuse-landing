@@ -177,7 +177,7 @@ export const Hero: React.FC = () => {
                     Explore
                   </div>
                   <div className="flex justify-center mt-4 w-20 m-auto">
-                    <ChevronDoubleDownIcon className="text-[#D95798] ease-in duration-300 shadow-sm hover:shadow-md shadow-[#D95798] hover:shadow-[#D95798] p-[1.555rem] rounded-full font-medium mb-2" />
+                    <ChevronDoubleDownIcon className="text-[#D95798] ease-in duration-300 shadow-md hover:shadow-lg shadow-[#D95798] hover:shadow-[#D95798] p-[1.555rem] rounded-full font-medium mb-5" />
                   </div>
                 </Link>
               </div>

@@ -49,7 +49,7 @@ const people = [
   
 export default function OurTeam() {
 return (
-  <div className="bg-gray-900 py-24 sm:py-32">
+  <div className="bg-gray-900 py-24 sm:py-32" id="team">
     <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
         <p className="text-center text-lg font-semibold leading-8 tracking-wider text-[#D95798]">

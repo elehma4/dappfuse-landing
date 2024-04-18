@@ -2,6 +2,7 @@
 
 import logo from "../../../public/images/logo-dappfuse-full-light-85.png"
 import { Bars3Icon, ChevronDoubleDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useSmoothScroll } from "@/app/utils/smooth-scroll";
 import { Dialog } from '@headlessui/react'
 import { useState } from 'react'
 import Image from 'next/image'
@@ -10,11 +11,20 @@ import Link from "next/link";
 const navigation = [
   { name: 'Product', href: '#' },
   { name: 'Features', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Company', href: '/#team' },
 ]
 
 export const Hero: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const smoothScrollTo = useSmoothScroll();
+
+  const handleNavLinkClick = (event, href) => {
+    event.preventDefault();
+    const id = href.split('#')[1];
+    if (id) {
+      smoothScrollTo(id)
+    }
+  }
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 h-screen">
@@ -79,7 +89,7 @@ export const Hero: React.FC = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
+              <Link key={item.name} href={item.href} onClick={(e) => handleNavLinkClick(e, item.href)} className="text-sm font-semibold leading-6 text-white">
                 {item.name}
               </Link>
             ))}
@@ -99,11 +109,11 @@ export const Hero: React.FC = () => {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
               <a href="#/Company" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+                <span className="sr-only">DappFuse</span>
                 <Image
                   className="h-8 w-auto"
                   src={logo}
-                  alt=""
+                  alt="dappfuse logo"
                 />
               </a>
               <button
@@ -119,13 +129,13 @@ export const Hero: React.FC = () => {
               <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">

@@ -8,11 +8,11 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from "next/link";
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Company', href: '/#team' },
-]
+// const navigation = [
+//   { name: 'Product', href: '#' },
+//   { name: 'Features', href: '#' },
+//   { name: 'Company', href: '/#team' },
+// ]
 
 export const Hero: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -87,19 +87,19 @@ export const Hero: React.FC = () => {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <Link key={item.name} href={item.href} onClick={(e) => handleNavLinkClick(e, item.href)} className="text-sm font-semibold leading-6 text-white">
                 {item.name}
               </Link>
             ))}
-          </div>
+          </div> */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:shadow-sm">
-            <Link href="https://platform.dappfuse.com/" className="rounded-md text-sm font-semibold border-2 border-[#D95798] text-white bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-5 py-[0.55rem] shadow-sm mr-[0.67rem]">
-              Get started
-            </Link>
-            <Link href="#" className="rounded-md text-sm font-semibold leading-6 bg-[#D95798] text-white flex items-center gap-2 px-7 py-[0.55rem]">
-              Log in {/* <span aria-hidden="true" className='transition-all duration-500 group-hover:translate-x-1'>&rarr;</span> */}
+            {/* <Link href="https://platform.dappfuse.com/" className="rounded-md text-sm font-semibold border-2 border-[#D95798] text-white bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-5 py-[0.55rem] shadow-sm mr-[0.67rem]">
+              Request Demo
+            </Link> */}
+            <Link href="/#request-demo" className="rounded-md text-sm font-semibold leading-6 bg-[#D95798] text-white flex items-center gap-2 px-7 py-[0.55rem]">
+              Request Demo {/* <span aria-hidden="true" className='transition-all duration-500 group-hover:translate-x-1'>&rarr;</span> */}
             </Link>
 
           </div>
@@ -127,7 +127,7 @@ export const Hero: React.FC = () => {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/25">
-                <div className="space-y-2 py-6">
+                {/* <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}
@@ -137,13 +137,13 @@ export const Hero: React.FC = () => {
                       {item.name}
                     </Link>
                   ))}
-                </div>
+                </div> */}
                 <div className="py-6">
                   <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
-                    Log in
+                    Request Demo
                   </Link>
                 </div>
               </div>

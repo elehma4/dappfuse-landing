@@ -1,67 +1,63 @@
 "use client";
 
-import { CardBody, CardContainer, CardItem } from "../ui/3d-card"
-import connect from "../../../public/images/connect.png"
-import chainEvent from "../../../public/images/chain-event.png"
-import identity from "../../../public/images/identity-print.png"
-import Image from 'next/image'
+import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image';
+import dflow from "../../../public/images/dappfuse-flow.png"
+
+const features = [
+  {
+    name: 'Push to deploy',
+    description:
+      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+    href: '#',
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: 'SSL certificates',
+    description:
+      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+    href: '#',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Simple queues',
+    description:
+      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
+]
 
 export const InfoCardSection: React.FC = () => {
-  const primaryFeatures = [
-    {
-      name: 'Set On-Chain Triggers',
-      description: 'Create on-chain triggers for wallet addresses, smart contracts and protocols to capture web3 data',
-      href: '#',
-      icon: chainEvent,
-    },
-    {
-      name: 'Marketing Connectors',
-      description: 'Infuse web3 customer data into your existing marketing stack by connecting on-chain events. ',
-      href: '#',
-      icon: connect,
-    },
-    {
-      name: 'Identity Resolution',
-      description: 'Resolve web3 domains to real world identities and stitch your customer profiles with on-chain data',
-      href: '#',
-      icon: identity,
-    },
-  ];
-
   return (
-    <div className="mx-auto pt-32 max-w-7xl px-6 lg:px-8" id="info">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-base font-semibold leading-7 text-[#D95798]">Identify trends</h2>
-        <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Transform data into action
-        </p>
-        <p className="mt-6 text-lg leading-8 text-gray-300">
-          Automagically push on-chain customer events to tools like Google Analytics, Hubspot, Salesforce CRM and many more
-        </p>
-      </div>
-      <div className="mx-auto max-w-2xl lg:max-w-none flex justify-center">
-        <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-          {primaryFeatures.map((feature) => (
-            <CardContainer key={feature.name}>
-              <div key={feature.name} className="flex flex-col p-8 rounded-3xl bg-[rgba(217,87,152,0.67)] shadow-lg cursor-pointer">
-                <dt className="text-base font-semibold leading-7 text-white mx-auto text-center mb-2">
-                  <CardItem>
-                    <Image src={feature.icon} className="w-60 text-white mb-6" aria-hidden="true" alt={feature.name} />
-                  </CardItem>
+    <div className="bg-gray-900 py-24 sm:py-32" id='info'>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-[#D95798]">Deploy faster</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Everything you need to deploy your app
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-300">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
+            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          </p>
+        </div>
+        <Image src={dflow} className='p-8' />
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.name} className="flex flex-col">
+                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
+                  <feature.icon className="h-5 w-5 flex-none text-[#D95798]" aria-hidden="true" />
                   {feature.name}
                 </dt>
-                <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                  <p className="flex-auto text-center">{feature.description}</p>
-                  <p className="mt-6">
-                    <a href={feature.href} className="text-sm font-semibold leading-6 text-white flex justify-center">
-                      Learn more<span className='ml-2' aria-hidden="true">→</span>
-                    </a>
-                  </p>
+                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
+                  <p className="flex-auto">{feature.description}</p>
                 </dd>
               </div>
-            </CardContainer>
-          ))}
-        </dl>
+            ))}
+          </dl>
+        </div>
       </div>
     </div>
   )

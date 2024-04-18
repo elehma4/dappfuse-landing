@@ -83,9 +83,9 @@ export const Card = ({
         rotateX: rotate,
         scale,
       }}
-      className="max-w-[80%] -mt-12 mx-auto h-[44rem] w-full p-2 rounded-[30px] bg-[rgba(217,87,152,0.1)]"
+      className="max-w-[80%] -mt-20 mx-auto h-[44rem] w-full p-2 rounded-[30px]"
     >
-      <div className=" h-full w-full overflow-hidden rounded-2xl bg-gray-100 dark:bg-transparent md:rounded-2xl md:p-4">
+      <div className=" h-full w-full rounded-2xl bg-gray-100 dark:bg-transparent md:rounded-2xl md:p-4">
         {children}
       </div>
     </motion.div>

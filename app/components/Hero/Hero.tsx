@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const smoothScrollTo = useSmoothScroll();
 
-  const handleNavLinkClick = (event, href) => {
+  const handleNavLinkClick = (event: any, href: string) => {
     event.preventDefault();
     const id = href.split('#')[1];
     if (id) {
@@ -108,14 +108,14 @@ export const Hero: React.FC = () => {
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10">
             <div className="flex items-center justify-between">
-              <a href="#/Company" className="-m-1.5 p-1.5">
+              <Link href="#/Company" className="-m-1.5 p-1.5">
                 <span className="sr-only">DappFuse</span>
                 <Image
                   className="h-8 w-auto"
                   src={logo}
                   alt="dappfuse logo"
                 />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-400"
@@ -139,12 +139,12 @@ export const Hero: React.FC = () => {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
+                  <Link
                     href="#"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -157,10 +157,6 @@ export const Hero: React.FC = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
               {"The World's First On-Chain Data Platform for Marketers"}
-              {/* <a href="#" className="font-semibold text-white">
-                <span className="absolute inset-0" aria-hidden="true" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a> */}
             </div>
           </div>
           <div className="text-center">
@@ -170,14 +166,6 @@ export const Hero: React.FC = () => {
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Connect the dots of your digital customer journey<br />by capturing on-chain data with your existing marketing tools
             </p>
-            {/* <div className="mt-10 flex flex-col items-center justify-center gap-x-8">
-              <a
-                href="https://platform.dappfuse.com/"
-                className="rounded-3xl hover:rounded-md bg-[#D95798] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-12 py-3 text-md font-semibold text-white shadow-sm transition-all duration-500"
-              >
-                Get started
-              </a>
-            </div> */}
             <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">
                 <Link href="/#info" className="w-full flex flex-col justify-center content-center">

@@ -42,7 +42,7 @@ export const InfoCardSection: React.FC = () => {
             pulvinar et feugiat blandit at. In mi viverra elit nunc.
           </p>
         </div>
-        <Image src={dflow} className='p-8 w-auto h-auto' />
+        <Image src={dflow} alt="dappfuse flow diagram" className='p-8 w-auto h-auto' />
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (

@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
             <Link href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">DappFuse</span>
               <Image
-                className="h-12 w-auto"
+                className="h-11 w-auto"
                 src={logo}
                 alt=""
               />
@@ -95,13 +95,9 @@ export const Hero: React.FC = () => {
             ))}
           </div> */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end hover:shadow-sm">
-            {/* <Link href="https://platform.dappfuse.com/" className="rounded-md text-sm font-semibold border-2 border-[#D95798] text-white bg-transparent bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-70 px-5 py-[0.55rem] shadow-sm mr-[0.67rem]">
-              Request Demo
-            </Link> */}
-            <Link href="/#request-demo" className="rounded-md text-sm font-semibold leading-6 bg-[#D95798] text-white flex items-center gap-2 px-7 py-[0.55rem]">
+            <Link href="/#request-demo" onClick={(e) => handleNavLinkClick(e, "/#request-demo")} className="rounded-md text-sm font-semibold leading-6 bg-[#D95798] text-white flex items-center gap-2 px-7 py-[0.55rem]">
               Request Demo {/* <span aria-hidden="true" className='transition-all duration-500 group-hover:translate-x-1'>&rarr;</span> */}
             </Link>
-
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -140,7 +136,8 @@ export const Hero: React.FC = () => {
                 </div> */}
                 <div className="py-6">
                   <Link
-                    href="#"
+                    href="/#request-demo"
+                    onClick={(e) => handleNavLinkClick(e, "/#request-demo")}
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800"
                   >
                     Request Demo

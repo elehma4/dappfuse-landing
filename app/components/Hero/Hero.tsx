@@ -1,6 +1,6 @@
 "use client";
 
-import logo from "../../../public/images/logo-dappfuse-full-light-85.png"
+import logo from "../../../public/images/logo-main.png"
 import { Bars3Icon, ChevronDoubleDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useSmoothScroll } from "@/app/utils/smooth-scroll";
 import { Dialog } from '@headlessui/react'
@@ -69,9 +69,9 @@ export const Hero: React.FC = () => {
         <nav className="flex items-center justify-between p-6 lg:px-12" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">DappFuse</span>
               <Image
-                className="h-8 w-auto"
+                className="h-12 w-auto"
                 src={logo}
                 alt=""
               />
@@ -111,7 +111,7 @@ export const Hero: React.FC = () => {
               <Link href="#/Company" className="-m-1.5 p-1.5">
                 <span className="sr-only">DappFuse</span>
                 <Image
-                  className="h-8 w-auto"
+                  className="h-12 w-auto"
                   src={logo}
                   alt="dappfuse logo"
                 />

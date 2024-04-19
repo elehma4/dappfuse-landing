@@ -1,4 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import destinations from "../../../public/images/destinations.png"
+import Image from 'next/image'
 
 const features = [
   {
@@ -45,8 +47,8 @@ export const ProductFeature: React.FC = () => {
               </dl>
             </div>
           </div>
-          <img
-            src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+          <Image
+            src={destinations}
             alt="Product screenshot"
             className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
             width={2432}

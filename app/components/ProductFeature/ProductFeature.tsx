@@ -4,19 +4,19 @@ import Image from 'next/image'
 
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Customer Journey',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      "By integrating web3 customer interactions with your analytics solutions you'll be able to create a complete customer journey.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    name: 'Targeted Advertising',
+    description: 'Match Web3 audiences with demand-side advertising platforms to precisely target on-chain customer actions.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Marketing Automation',
+    description: 'Connect your marketing automation platform to trigger email campaigns based on on-chain events.',
     icon: ServerIcon,
   },
 ]
@@ -28,11 +28,10 @@ export const ProductFeature: React.FC = () => {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-[#D95798]">Deploy faster</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">A better workflow</p>
+              <h2 className="text-base font-semibold leading-7 text-[#D95798]">web3 marketing</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Data-Driven Marketing for the Next Digital Era</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                iste dolor cupiditate blanditiis ratione.
+                Today, many brands overlook the potential of Web3 data, missing key customer interactions. Activating Web3 data opens up a spectrum of new use cases.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
                 {features.map((feature) => (

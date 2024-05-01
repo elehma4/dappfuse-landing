@@ -1,12 +1,12 @@
 "use client";
 
 import {
-    ArrowPathIcon,
+    AdjustmentsVerticalIcon,
+    ChartBarIcon,
     CloudArrowUpIcon,
-    Cog6ToothIcon,
+    CubeIcon,
     FingerPrintIcon,
-    LockClosedIcon,
-    ServerIcon,
+    SignalIcon,
   } from '@heroicons/react/20/solid'
 import { ContainerScroll } from "../ui/container-scroll-animation";
 import dashboard from "../../../public/images/dappFuse-dashboard.png";
@@ -32,34 +32,34 @@ export const ScrollFeature: React.FC = () => {
 
   const secondaryFeatures = [
     {
-        name: 'Onboard with ease.',
-        description: 'Simplify your entry into web3 marketing. Easily integrate on-chain data into your analytics platform.',
+        name: 'Real-time Events',
+        description: 'Capture real-time transactions on Ethereum, Polygon, Optimism, Arbitrum and Base.',
+        icon: SignalIcon,
+    },
+    {
+        name: 'On-chain Activity',
+        description: "Track all forms of on-chain activity, from token and NFT transfers to the smart contract interactions.",
+        icon: CubeIcon,
+    },
+    {
+        name: 'Advanced Filters',
+        description: 'Leverage advanced filters to create versatile marketing segments driven by on-chain customer behavior.',
+        icon: AdjustmentsVerticalIcon,
+    },
+    {
+        name: 'Marketing Connectors',
+        description: 'No-code integrations to send on-chain data seamlessly to your digital marketing tools.',
         icon: CloudArrowUpIcon,
     },
     {
-        name: 'Data safeguard.',
-        description: "Build a reliable data pipeline, ensuring continuous and secure data flow for your marketing needs.",
-        icon: LockClosedIcon,
-    },
-    {
-        name: 'Sync live events.',
-        description: 'Enhance your analytics with real-time data for your marketing and product strategies.',
-        icon: ArrowPathIcon,
-    },
-    {
-        name: 'Digital identification.',
-        description: 'Improve customer profiling on your platform. Create user personas and improve targeting.',
+        name: 'Identity SDK',
+        description: 'Merge customer interactions from your web interfaces and apps with on-chain activity seamlessly.',
         icon: FingerPrintIcon,
     },
     {
-        name: 'Powerful API.',
-        description: 'Leverage our robust platform to customize and extend the capabilities of your marketing stack.',
-        icon: Cog6ToothIcon,
-    },
-    {
-        name: 'Database backups.',
-        description: 'Ensuring your on-chain data is preserved, consistent, and recoverable in any scenario.',
-        icon: ServerIcon,
+        name: 'Live Monitoring',
+        description: 'Get real-time stats and detailed monitoring of all your triggers and destinations.',
+        icon: ChartBarIcon,
     },
   ];
 
@@ -69,8 +69,8 @@ export const ScrollFeature: React.FC = () => {
           <div className='my-40 mx-10'>
             <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-[24] mb-8">
               <div className="mx-auto max-w-2xl text-center">
-                <h2 className="text-base font-semibold leading-7 text-[#D95798]">Everything you need</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Integrate with ease.</p>
+                <h2 className="text-base font-semibold leading-7 text-[#D95798]">Platform Features</h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Integrated Web3 Marketing Platform</p>
               </div>
             </div>
             <Image

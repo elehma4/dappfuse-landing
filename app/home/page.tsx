@@ -2,7 +2,7 @@
 
 import { LogoCloud } from '../components/LogoCloud/LogoCloud'
 import { Hero } from '../components/Hero/Hero'
-import { InfoCardSection } from '../components/Sections/InfoCardSection'
+import { HeroImage } from '../components/Sections/HeroImage'
 import { ScrollFeature } from '../components/ScrollFeature/ScrollFeature'
 import GetNotified from '../components/Sections/GetNotified';
 import OurTeam from '../components/OurTeam/OurTeam';
@@ -16,7 +16,7 @@ const Home = () => {
         {/* Hero section */}
         <Hero />
         {/* Info Card Section */}
-        <InfoCardSection />
+        <HeroImage />
         {/* SUPPORTED NETWORKS */}
         <LogoCloud />
         {/* Feature section */}

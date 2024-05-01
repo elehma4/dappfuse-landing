@@ -158,10 +158,10 @@ export const Hero: React.FC = () => {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-6xl tracking-tight">
-              Unlock Web3 Insights
+              Enrich your Marketing with Web3 Data
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Connect the dots of your digital customer journey<br />by capturing on-chain data with your existing marketing tools
+              Unlock the complete digital customer journey<br />by capturing on-chain activity with your existing marketing tools
             </p>
             <div className="my-16 flex flex-col items-center justify-center gap-x-8 cursor-pointer">
               <div className="flex flex-col justify-center content-center absolute bottom-0">

@@ -17,7 +17,7 @@ const people = [
   },
   {
     name: 'Ian Brillembourg',
-    role: 'Strategy & Acquisition',
+    role: 'Strategy & Marketing',
     image: ian,
     linkedinUrl: 'https://www.linkedin.com/in/ianbrillembourg/'
   },
@@ -29,7 +29,7 @@ const people = [
   },
   {
     name: 'Ethan Lehman',
-    role: 'Developer',
+    role: 'Full Stack Engineer',
     image: ethan,
     linkedinUrl: 'https://www.linkedin.com/in/ethan-lehman-development/'
   },

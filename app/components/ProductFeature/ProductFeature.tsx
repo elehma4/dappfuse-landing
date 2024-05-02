@@ -28,7 +28,7 @@ export const ProductFeature: React.FC = () => {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <h2 className="text-base font-semibold leading-7 text-[#D95798]">web3 marketing</h2>
+              <h2 className="text-base font-semibold leading-7 text-[#D95798]">Web3 Marketing</h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Data-Driven Marketing for the Next Digital Era</p>
               <p className="mt-6 text-lg leading-8 text-gray-300">
                 Today, many brands overlook the potential of Web3 data, missing key customer interactions. Activating Web3 data opens up a spectrum of new use cases.

@@ -85,8 +85,8 @@ export const ScrollFeature: React.FC = () => {
           titleComponent={
             <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-[24]">
               <div className="mx-auto max-w-2xl sm:text-center">
-                <h2 className="text-base font-semibold leading-7 text-[#D95798]">Everything you need</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Integrate with ease.</p>
+                <h2 className="text-base font-semibold leading-7 text-[#D95798]">Platform Features</h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Integrated Web3 Marketing Platform</p>
               </div>
             </div>
           }

@@ -30,7 +30,7 @@ const features = [
 
 export const HeroImage: React.FC = () => {
   return (
-    <div className="bg-gray-900 py-16 mt-20" id='info'>
+    <div className="bg-gray-900 py-16 mt-32" id='info'>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-[#D95798]">The Platform</h2>

@@ -41,7 +41,9 @@ export const HeroImage: React.FC = () => {
             Effortlessly monitor on-chain customer behavior and sync it in real-time with your existing marketing stack through DappFuse.
           </p>
         </div>
-        <Image src={heroImg} alt="dappfuse flow diagram" className='p-8 w-auto h-auto' />
+        <div className='w-full flex justify-center'>
+          <Image src={heroImg} alt="dappfuse flow diagram" className='p-8 w-auto h-auto max-w-[80%]' />
+        </div>
         <div className="mx-auto max-w-2xl mt-4 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (

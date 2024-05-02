@@ -1,35 +1,9 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useRequestDemo } from "@/app/utils/form-hook";
 
-interface FormResponse {
-  message: string;
-}
-
-export default async function GetNotified() {
-  const [email, setEmail] = useState('');
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
-  const [successMessage, setSuccessMessage] = useState<string | null>(null);
-
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setErrorMessage(null);
-    setSuccessMessage(null);
-
-    try {
-      const response = await fetch(`https://ops.dappfuse.com/web/requestDemo?email=${encodeURIComponent(email)}`);
-      const data: FormResponse = await response.json();
-
-      if (response.ok) {
-        setSuccessMessage('Request submitted successfully!');
-      } else {
-        setErrorMessage(data.message || 'An error occurred while processing your request.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      setErrorMessage('An error occurred while processing your request.');
-    }
-  };
+export default function GetNotified() {
+  const { setEmail, handleSubmit, errorMessage, successMessage } = useRequestDemo();
 
   return (
     <div className="py-16 sm:py-24" id="request-demo">
@@ -54,6 +28,7 @@ export default async function GetNotified() {
               required
               className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
               placeholder="Enter your email"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button
               type="submit"

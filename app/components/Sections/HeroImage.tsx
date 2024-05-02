@@ -42,7 +42,7 @@ export const HeroImage: React.FC = () => {
           </p>
         </div>
         <div className='w-full mx-auto flex justify-center'>
-          <Image src={superWide} alt="dappfuse flow diagram" className='p-8 w-auto h-auto' />
+          <Image src={superWide} alt="dappfuse flow diagram" className='py-8 w-auto h-auto' />
         </div>
         <div className="mx-auto max-w-2xl mt-8 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">

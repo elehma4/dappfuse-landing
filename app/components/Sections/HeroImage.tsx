@@ -2,7 +2,7 @@
 
 import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image';
-import heroImg from "../../../public/images/hero-df.png"
+import superWide from "../../../public/images/super-wide.png"
 
 const features = [
   {
@@ -30,7 +30,7 @@ const features = [
 
 export const HeroImage: React.FC = () => {
   return (
-    <div className="bg-gray-900 py-16" id='info'>
+    <div className="bg-gray-900 py-16 mt-20" id='info'>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-[#D95798]">The Platform</h2>
@@ -41,10 +41,10 @@ export const HeroImage: React.FC = () => {
             Effortlessly monitor on-chain customer behavior and sync it in real-time with your existing marketing stack through DappFuse.
           </p>
         </div>
-        <div className='w-full flex justify-center'>
-          <Image src={heroImg} alt="dappfuse flow diagram" className='p-8 w-auto h-auto max-w-[80%]' />
+        <div className='w-full mx-auto flex justify-center'>
+          <Image src={superWide} alt="dappfuse flow diagram" className='p-8 w-auto h-auto' />
         </div>
-        <div className="mx-auto max-w-2xl mt-4 lg:max-w-none">
+        <div className="mx-auto max-w-2xl mt-8 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">

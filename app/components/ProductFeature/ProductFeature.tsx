@@ -1,4 +1,4 @@
-import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import { ArrowTrendingUpIcon, ArrowPathIcon, PuzzlePieceIcon } from '@heroicons/react/20/solid'
 import destinations from "../../../public/images/destinations.png"
 import Image from 'next/image'
 
@@ -7,17 +7,17 @@ const features = [
     name: 'Customer Journey',
     description:
       "By integrating web3 customer interactions with your analytics solutions you'll be able to create a complete customer journey.",
-    icon: CloudArrowUpIcon,
+    icon: PuzzlePieceIcon,
   },
   {
     name: 'Targeted Advertising',
     description: 'Match Web3 audiences with demand-side advertising platforms to precisely target on-chain customer actions.',
-    icon: LockClosedIcon,
+    icon: ArrowTrendingUpIcon,
   },
   {
     name: 'Marketing Automation',
     description: 'Connect your marketing automation platform to trigger email campaigns based on on-chain events.',
-    icon: ServerIcon,
+    icon: ArrowPathIcon,
   },
 ]
 

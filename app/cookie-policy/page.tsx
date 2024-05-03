@@ -89,7 +89,7 @@ const CookiePolicy = () => {
             <div className="text-lg flex flex-col text-gray-300">
               1. Introduction
               <div className="text-sm text-gray-400">
-                Dappfuse ("we", "us", or "our") understands the importance of your privacy and is committed to protecting it. This Cookie Policy explains how and why we use cookies on www.dappfuse.com (the "Website"). Please read this policy carefully.
+                Dappfuse (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) understands the importance of your privacy and is committed to protecting it. This Cookie Policy explains how and why we use cookies on www.dappfuse.com (the "Website"). Please read this policy carefully.
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">

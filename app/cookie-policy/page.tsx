@@ -4,12 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/images/logo-main.png";
 import { Footer } from "../components/Footer/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Dialog } from '@headlessui/react'
 
 const CookiePolicy = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Hide horizontal scrollbar
+    document.body.style.overflowX = 'hidden';
+  }, []);
 
   return (
     <div className="w-screen bg-gray-900">

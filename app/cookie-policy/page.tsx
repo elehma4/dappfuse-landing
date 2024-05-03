@@ -89,13 +89,13 @@ const CookiePolicy = () => {
             <div className="text-lg flex flex-col text-gray-300">
               1. Introduction
               <div className="text-sm text-gray-400">
-                Dappfuse (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) understands the importance of your privacy and is committed to protecting it. This Cookie Policy explains how and why we use cookies on www.dappfuse.com (the "Website"). Please read this policy carefully.
+                Dappfuse (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) understands the importance of your privacy and is committed to protecting it. This Cookie Policy explains how and why we use cookies on www.dappfuse.com (the &quot;Website&quot;). Please read this policy carefully.
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">
               2. What are Cookies
               <div className="text-sm text-gray-400">
-                Cookies are small files which are stored on a user's computer. They are designed to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or the client computer. This allows the server to deliver a page tailored to a particular user, or the page itself can contain some script which is aware of the data in the cookie and can carry information from one visit to the website (or related site) to the next.
+                Cookies are small files which are stored on a user&apos;s computer. They are designed to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or the client computer. This allows the server to deliver a page tailored to a particular user, or the page itself can contain some script which is aware of the data in the cookie and can carry information from one visit to the website (or related site) to the next.
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">
@@ -107,7 +107,7 @@ const CookiePolicy = () => {
             <div className="text-lg flex flex-col text-gray-300">
               Specifically, we use:
               <div className="text-sm text-gray-400">
-                "_df" cookie: This is used to maintain user sessions and to carry information across pages of our Website and prevent the need for re-entry of information. It is essential for parts of the Website to operate. This cookie expires after 30 minutes of inactivity.
+                &apos;_df&apos; cookie: This is used to maintain user sessions and to carry information across pages of our Website and prevent the need for re-entry of information. It is essential for parts of the Website to operate. This cookie expires after 30 minutes of inactivity.
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">
@@ -115,7 +115,7 @@ const CookiePolicy = () => {
               <div className="text-sm text-gray-400">
                 You can choose to enable or disable Cookies in your internet browser. Most internet browsers also enable you to choose whether you wish to disable all cookies or only third-party cookies. By default, most internet browsers accept cookies, but this can be changed.
                 <br />
-                For further details, consult the Help menu in your internet browser or the documentation that came with your device. Please note that disabling the "_df" cookie may impact the functionality of our Website.
+                For further details, consult the Help menu in your internet browser or the documentation that came with your device. Please note that disabling the &apos;_df&apos; cookie may impact the functionality of our Website.
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">
@@ -135,7 +135,7 @@ const CookiePolicy = () => {
             <div className="text-lg flex flex-col text-gray-300">
               7. Consent
               <div className="text-sm text-gray-400">
-                By continuing to use our Website, you are agreeing to the placement of our "_df" cookie on your device in accordance with this Cookie Policy. If you do not wish to accept our "_df" cookie in accordance with this Policy, please stop using our site immediately, or disable the relevant cookie function in your browser.
+                By continuing to use our Website, you are agreeing to the placement of our &apos;_df&apos; cookie on your device in accordance with this Cookie Policy. If you do not wish to accept our &apos;_df&apos; cookie in accordance with this Policy, please stop using our site immediately, or disable the relevant cookie function in your browser.
               </div>
             </div>
           </div>

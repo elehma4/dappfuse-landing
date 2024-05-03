@@ -86,7 +86,7 @@ const PrivacyPolicy = () => {
             <div className="text-lg flex flex-col text-gray-300">
               1. Introduction
               <div className="text-sm text-gray-400">
-                  Welcome to Dappfuse! We are committed to protecting the privacy and security of our customers' data. This privacy policy aims to give you information on how we collect and process your personal data through your use of our services, in compliance with the General Data Protection Regulation (GDPR).
+                  Welcome to Dappfuse! We are committed to protecting the privacy and security of our customers&apos; data. This privacy policy aims to give you information on how we collect and process your personal data through your use of our services, in compliance with the General Data Protection Regulation (GDPR).
               </div>
             </div>
             <div className="text-lg flex flex-col text-gray-300">
